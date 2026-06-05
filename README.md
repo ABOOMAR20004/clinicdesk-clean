@@ -17,13 +17,22 @@ ClinicDesk is a private PHP/MySQL clinic management dashboard built for the SDEV
 - The template is split into reusable PHP partials: `header.php`, `navbar.php`, `sidebar.php`, `content_header.php`, `footer.php`, `alerts.php`, and `pagination.php`.
 - AdminLTE components used across the project include login card, navbar, sidebar, content wrapper, breadcrumbs, cards, small boxes, info boxes, badges, custom file inputs, DataTables, and Chart.js.
 
-## Setup
+## Quick Run With XAMPP
+
+1. Install or open XAMPP.
+2. Double-click `run_project.bat`.
+3. Open the URL shown in the terminal, usually `http://127.0.0.1:8000/index.php`.
+
+The run script starts MySQL when needed, creates `config/database.php` from the example file when missing, imports `database/clinicdesk_db.sql` if the database is not ready, and starts PHP's local server.
+
+## Manual Setup
 
 1. Copy the `clinicdesk` folder into your Apache/PHP web root.
-2. Import `database/clinicdesk_db.sql` into MySQL.
-3. Copy `config/database.example.php` to `config/database.php`.
-4. Edit `config/database.php` to match your local database credentials.
-5. Open `http://localhost/clinicdesk/index.php`.
+2. Start MySQL from XAMPP.
+3. Import `database/clinicdesk_db.sql` into MySQL.
+4. Copy `config/database.example.php` to `config/database.php`.
+5. Edit `config/database.php` to match your local database credentials.
+6. Open `http://localhost/clinicdesk/index.php`.
 
 ## Demo Accounts
 

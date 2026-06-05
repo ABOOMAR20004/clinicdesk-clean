@@ -9,3 +9,4 @@ public/uploads/prescriptions/*
 !public/uploads/prescriptions/.htaccess
 !public/uploads/prescriptions/index.php
 *.log
+tmp/
