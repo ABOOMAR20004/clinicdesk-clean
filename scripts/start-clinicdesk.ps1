@@ -25,7 +25,7 @@ function Assert-File($path, $label) {
 }
 
 function Test-Port($port) {
-    return [bool](Get-NetTCPConnection -LocalAddress 127.0.0.1 -LocalPort $port -State Listen -ErrorAction SilentlyContinue)
+    return [bool](Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue)
 }
 
 function Test-MySql {
